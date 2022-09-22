@@ -1,12 +1,20 @@
-
+ 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
 
 :root {
-    --primary: #0d6efd;
+    --primary: #d85016;
     --dark: #21252f;
     --body: #888;
     --white: #ffffff;
     --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+    --yellow: #ffc700;
+    --green:#10a958;
+    --blue:rgb(131, 242, 140);
+}
+
+.text{
+    font-size: 4.5vh;
+    font-family: "Sora", sans-serif;
 }
 
 body {
@@ -32,6 +40,8 @@ img {
 
 .navbar {
     box-shadow: var(--box-shadow);
+    background-color:var(--yellow);
+
 }
 
 .logo {
@@ -51,13 +61,21 @@ img {
     padding: 14px 18px;
     border-width: 2px;
     border-radius: 0;
+    background-color:var(--blue);
+    border-radius: 8%;
+    
 }
+/* .zx{
+    width:70%;
+    height:auto;
+} */
 
 .hero {
-    background-image: url(../img/cover.jpg);
+    /* background-image: url(../img/cover.jpg); */
+   
     background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
     position: relative;
     z-index: 2;
 }
@@ -69,9 +87,48 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(21, 20, 51, 0.8);
-    z-index: -1;
+    background-color: rgba(112, 110, 171, 0.8);
+    /* z-index: -1; */
 }
+.video-background-holder {
+    position: relative;
+    background-color: rgb(65, 62, 62);
+    height: calc(100vh - 72px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .video-background-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(38, 39, 39);
+    opacity: 0.5;
+    z-index: 1;
+  }
 
 section {
     padding-top: 120px;
@@ -188,11 +245,10 @@ section {
 }
 
 .team-member img {
-    width: 125px;
-    height: 125px;
-    border-radius: 100px;
+    width: 185px;
+    height: 130px;
+    border-radius: 30px;
 }
-
 
 .social-icons {
     display: flex;
@@ -234,7 +290,7 @@ form .form-control {
 .footer-top {
     padding-top: 90px;
     padding-bottom: 90px;
-    background-color: var(--dark);
+    background-color: rgb(146, 213, 240);
 }
 
 .footer-top a {
@@ -246,5 +302,5 @@ form .form-control {
 }
 
 .footer-bottom {
-    background-color: #242933;
-}
+    background-color: rgb(138, 201, 226);
+} 
